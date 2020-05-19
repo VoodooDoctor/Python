@@ -1,10 +1,8 @@
-def division():
-    a = float(input("Введите числитель: "))
-    b = float(input("Введите знаменатель: "))
+def division(a, b):
     try:
         answer = a / b
+        return answer
     except ZeroDivisionError:
-        print("Деление на ноль!")
-    return answer
+        return print("Деление на ноль!")
 
-print(division())
+print(division(int(input("Введите чилитель = ")), int(input("Введите знаменатель = "))))
